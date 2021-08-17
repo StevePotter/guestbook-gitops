@@ -12,7 +12,7 @@ images:
 - name: 457472006214.dkr.ecr.us-west-1.amazonaws.com/guestbook
   newTag: d6cbdc0df33ef5f5dce803931e4d89031865223b
 - name: 860967817579.dkr.ecr.us-east-1.amazonaws.com/guestbook
-  newTag: 5d6889dc42b3f94732ec0b71f441c8d73ad0463d
+  newTag: 57f38a1f67e22829b478f424803fa8b77d870fea
 - name: 860967817579.dkr.ecr.us-east-2.amazonaws.com/guestbook
   newTag: d31f73c49aad2be461aef759421b062a286a7e33
 - name: 860967817579.dkr.ecr.us-west-1.amazonaws.com/guestbook
