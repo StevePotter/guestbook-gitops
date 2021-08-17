@@ -59,7 +59,7 @@ jobs:
     - name: Set image tag
       run: |
           cd deploy
-          kustomize edit set image $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+          kustomize edit set image guestbookapp=$AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$CONTAINER_IMAGE
           cat kustomization.yaml
 
     - name: Commit kustomization
