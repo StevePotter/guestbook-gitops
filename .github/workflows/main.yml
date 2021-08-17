@@ -53,8 +53,14 @@ jobs:
         IMAGE_TAG: ${{ github.sha }}
       if: github.ref == 'refs/heads/master'
       run: |
-        docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG ./php-redis
+        docker build -t $CONTAINER_IMAGE -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG ./php-redis
         docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+
+    - name: Set image tag
+      run: |
+          cd deploy
+          kustomize edit set image $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$CONTAINER_IMAGE
+          cat kustomization.yaml
 
     - name: Commit kustomization
       run: |
