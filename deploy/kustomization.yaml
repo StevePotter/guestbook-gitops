@@ -7,7 +7,6 @@ resources:
 - redis-master-service.yaml
 - redis-slave-deployment.yaml
 - redis-slave-service.yaml
-- charts.yaml
 
 images:
 - name: /
