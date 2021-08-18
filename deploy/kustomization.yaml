@@ -27,4 +27,4 @@ images:
   newTag: new
 - name: guestbookapp
   newName: 860967817579.dkr.ecr.us-east-1.amazonaws.com/guestbook
-  newTag: c14ca9faf9bf34bc802f302e76d210e1c5afd3da
+  newTag: a415f4cc9343779a9a3620961687d64f594bf564
