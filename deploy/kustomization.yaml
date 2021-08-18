@@ -7,6 +7,7 @@ resources:
 - redis-master-service.yaml
 - redis-slave-deployment.yaml
 - redis-slave-service.yaml
+- charts.yaml
 
 images:
 - name: /
@@ -26,4 +27,4 @@ images:
   newTag: new
 - name: guestbookapp
   newName: 860967817579.dkr.ecr.us-east-1.amazonaws.com/guestbook
-  newTag: 483a9707963a19e352d9af8bfabb2814a97902c5
+  newTag: c14ca9faf9bf34bc802f302e76d210e1c5afd3da
